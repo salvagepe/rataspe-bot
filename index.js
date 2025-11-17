@@ -89,7 +89,7 @@ client.on("interactionCreate", async (interaction) => {
         if (interaction.customId === "menu_rataspe") {
             // OPCIÓN IP
             if (interaction.values[0] === "ip") {
-                await interaction.update({
+                await interaction.editReply({
                     content: "**📡IP de RATASPE📡**\n```rataspe.mc```",
                     components: botonVolver(),
                 });
